@@ -1,0 +1,72 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+	font-weight: inherit;
+	font-size: inherit;
+	overflow-wrap: break-word;
+	line-height: 1.1;
+}
+input,
+label,
+button {
+  font: inherit;
+}
+
+:root {
+	/* Primary */
+
+	--Red-500: hsl(10, 79%, 65%);
+	--Blue-300: hsl(186, 34%, 65%);
+	
+	/* Neutral */
+	
+	--Brown-950: hsl(25, 47%, 15%);
+	--Brown-400: hsl(28, 10%, 53%);
+	--Red-100: hsl(26, 66%, 93%);
+}
+
+body {
+
+}
+
+.container {
+}
+.balance-container {
+}
+.balance-info {
+}
+.balance-title {
+}
+.balance-amount {
+}
+.logo {
+}
+.spending-container {
+}
+.spending-title {
+}
+.chart-container {
+}
+.divider {
+}
+.monthly-info {
+}
+.total-container {
+}
+.text {
+}
+.total-amount {
+}
+.percentage-container {
+}
+.percentage {
+}
