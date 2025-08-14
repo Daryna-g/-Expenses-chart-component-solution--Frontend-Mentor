@@ -71,11 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 });
 
-/**
- * Renders the chart based on the provided data
- * @param {Array} data - The spending data for each day
- * @param {string} currentDay - The current day string (mon, tue, etc.)
- */
 function renderChart(data, currentDay) {
 	const chartContainer = document.getElementById('chart-container');
 	chartContainer.innerHTML = ''; // Clear any existing content
