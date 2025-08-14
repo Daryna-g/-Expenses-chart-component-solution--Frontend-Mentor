@@ -31,11 +31,19 @@ button {
 	
 	--Brown-950: hsl(25, 47%, 15%);
 	--Brown-400: hsl(28, 10%, 53%);
+
+	--Red-200: hsl(10, 79%, 75%);
 	--Red-100: hsl(26, 66%, 93%);
+	--Blue-200: hsl(186, 34%, 75%);
 
 	--white: hsl(0, 0%, 100%);
 }
 
+h1 {
+	/* font-size: 26px; */
+	font-size: 24px;
+	font-weight: 700;
+}
 body {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 18px;
@@ -58,7 +66,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1.5rem 2rem;
+	padding: 2rem;
  	border-radius: 0.8rem;
 	color: var(--white);
 	margin-bottom: 1.5rem;
@@ -85,20 +93,106 @@ body {
   	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
 }
 .spending-title {
+	margin-bottom: 1.5rem;
+	color: var(--Brown-950);
 }
 .chart-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 180px; /* Adjusted height to match design */
+	margin-bottom: 1.5rem;
+	padding-top: 1rem;
 }
+
+.chart-bar-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 0.2rem;
+}
+
+.chart-bar {
+	width: 100%;
+	max-width: 50px;
+	background-color: var(--Red-500);
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 0.3s ease;
+	min-height: 5px;
+}
+
+.chart-bar:hover {
+	background-color: var(--Red-200);
+}
+
+.chart-bar.current-day {
+	background-color: var(--Blue-300);
+}
+
+.chart-bar.current-day:hover {
+	background-color: var(--Blue-200);
+}
+
+.chart-bar-tooltip {
+	position: absolute;
+	top: -45px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--Brown-950);
+	color: var(--white);
+	padding: 0.5rem 0.6rem;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 0.85rem;
+	display: none;
+	white-space: nowrap;
+	z-index: 10;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-bar:hover .chart-bar-tooltip {
+	display: block;
+}
+
+.chart-bar-label {
+	margin-top: 0.6rem;
+	color: var(--Brown-400);
+	font-size: 0.85rem;
+}
+
 .divider {
+	border: none;
+	height: 2px;
+	background-color: hsl(27, 66%, 92%);
+	margin: 1.5rem 0 1.2rem 0;
 }
 .monthly-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 .total-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 .text {
+	font-size: 0.95rem;
+	color: var(--Brown-400);
 }
 .total-amount {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1;
 }
 .percentage-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .percentage {
+	font-weight: 700;
 }
