@@ -40,8 +40,7 @@ button {
 }
 
 h1 {
-	/* font-size: 26px; */
-	font-size: 24px;
+	font-size: 32px;
 	font-weight: 700;
 }
 body {
@@ -74,13 +73,13 @@ body {
 .balance-info {
 }
 .balance-title {
-	font-size: 0.95rem;
+	/* font-size: 1rem; */
   	font-weight: 400;
   	margin-bottom: 0.5rem;
 	color: var(--Red-100);
 }
 .balance-amount {
-	font-size: 1.8rem;
+	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
 }
@@ -180,11 +179,10 @@ body {
 	gap: 0.5rem;
 }
 .text {
-	font-size: 0.95rem;
 	color: var(--Brown-400);
 }
 .total-amount {
-	font-size: 32px;
+	font-size: 42px;
 	font-weight: 700;
 	line-height: 1;
 }
@@ -195,4 +193,54 @@ body {
 }
 .percentage {
 	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	body {
+	  padding: 1rem;
+	}
+ 
+	.container {
+	  max-width: 100%;
+	}
+ 
+	.balance-container {
+	  padding: 1.5rem;
+	}
+ 
+	.balance-amount {
+	  font-size: 1.5rem;
+	}
+ 
+	.spending-container {
+	  padding: 1.5rem;
+	}
+ 
+	h1 {
+	  font-size: 1.2rem;
+	}
+ 
+	.chart-container {
+	  height: 160px;
+	}
+ 
+	.chart-bar {
+	  border-radius: 3px;
+	}
+ 
+	.chart-bar-tooltip {
+	  padding: 0.4rem 0.5rem;
+	  font-size: 0.8rem;
+	}
+ 
+	.chart-bar-label {
+	  font-size: 0.75rem;
+	}
+ 
+	.total-amount {
+	  font-size: 28px;
+	}
+	.text {
+		font-size: 0.875rem;
+	}
 }
