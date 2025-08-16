@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/conference-ticket-generator-solution-FqX69bH2r9)
-- Live Site URL: [Add live site URL here](https://daryna-g.github.io/Conference-ticket-generator-solution/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/expenses-chart-component-solution-IANiSXOExI)
+- Live Site URL: [Add live site URL here](https://daryna-g.github.io/-Expenses-chart-component-solution--Frontend-Mentor/)
 
 ## My process
 
